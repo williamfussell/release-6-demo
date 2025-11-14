@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing & DevOps - FlexiGenAI Release 6</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="ey-logo.png" alt="EY" class="ey-logo-img">
+                <span class="nav-logo-text">FlexiGenAI</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Overview</a>
+                <a href="quality.html" class="nav-link">Product Quality</a>
+                <a href="agentic.html" class="nav-link">Agentic AI</a>
+                <a href="ingestion.html" class="nav-link">Ingestion</a>
+                <a href="uiux.html" class="nav-link">UI/UX</a>
+                <a href="admin.html" class="nav-link">Admin</a>
+                <a href="testing.html" class="nav-link active">Testing & DevOps</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Testing & DevOps -->
+    <section id="testing" class="section testing-section">
+        <div class="parallax-bg testing-bg"></div>
+        <div class="content-container">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Testing & DevOps</h2>
+                <p class="section-subtitle">Quality Engineering & Platform Reliability</p>
+            </div>
+
+            <div class="testing-content" style="position: relative; z-index: 1; transform: none !important;">
+                <!-- Overview -->
+                <div class="intro-section">
+                    <p class="intro-text">
+                        The Testing & DevOps pod reinforced FlexiGenAI’s operational backbone. The team focused on three pillars—testing rigor, infrastructure stability, and delivery efficiency—while supporting live client engagements to harden the platform under real workloads. The outcome: a predictable testing lifecycle, resilient autoscaling, richer observability, and faster, safer releases.
+                    </p>
+                </div>
+
+                <!-- Pillars -->
+                <div class="pillars-section">
+                    <h3>Operating Pillars</h3>
+                    <div class="pillars-grid">
+                        <div class="pillar-card">
+                            <h4>Testing & Quality Assurance</h4>
+                            <p>End-to-end lifecycle with defined environments, Azure DevOps structure, and disciplined bug management.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <h4>Infrastructure & Reliability</h4>
+                            <p>Autoscaling fixes, CronJob stability, backend API tuning, and a full observability stack.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <h4>Developer Experience</h4>
+                            <p>Consistent CI/CD, automated remediation for pipelines, and environment expansion across EY needs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Objectives -->
+                <div class="objectives-section">
+                    <h3>Core Objectives</h3>
+                    <div class="objectives-grid">
+                        <div class="objective-item">Establish a reliable testing lifecycle across Dev → QA → Staging → Prod</div>
+                        <div class="objective-item">Stand up Azure DevOps plans, suites, and structured execution</div>
+                        <div class="objective-item">Fix autoscaling, CronJobs, and backend concurrency bottlenecks</div>
+                        <div class="objective-item">Deploy unified observability with Prometheus, Grafana, Loki, Alloy</div>
+                        <div class="objective-item">Keep CI/CD stable through automated cleanup and environment readiness</div>
+                    </div>
+                </div>
+
+                <!-- Testing Lifecycle -->
+                <div class="workflow-section">
+                    <h3>Testing Lifecycle</h3>
+                    <div class="workflow-grid">
+                        <div class="workflow-card">
+                            <span class="workflow-step">01</span>
+                            <h4>Developer Testing</h4>
+                            <p>Local + Dev environment validation tied to feature branches.</p>
+                        </div>
+                        <div class="workflow-card">
+                            <span class="workflow-step">02</span>
+                            <h4>Feature Testing</h4>
+                            <p>QA environment coverage per epic with Azure DevOps suites.</p>
+                        </div>
+                        <div class="workflow-card">
+                            <span class="workflow-step">03</span>
+                            <h4>Regression</h4>
+                            <p>QA lock period ensures platform stability before promotion.</p>
+                        </div>
+                        <div class="workflow-card">
+                            <span class="workflow-step">04</span>
+                            <h4>Sanity</h4>
+                            <p>Smoke validation across demo, staging, prod, sandbox environments.</p>
+                        </div>
+                    </div>
+                    <p class="workflow-note">Each failed test auto-generates a bug, routes to developers, and follows a closed-loop fix → deploy → validate workflow.</p>
+                </div>
+
+                <!-- Key Deliverables -->
+                <div class="deliverables-section">
+                    <h3>Key Deliverables</h3>
+                    <div class="deliverables-grid">
+                        <div class="deliverable-category">
+                            <h4>Testing Framework & Release Process</h4>
+                            <ul>
+                                <li>Standardized terminology, environments, and scope across Dev, QA, Staging, Demo, Prod, Sandbox</li>
+                                <li>Azure DevOps hierarchy: Release plans → Epic suites → Feature test cases</li>
+                                <li>Bug workflow aligned to each failed test case for traceable fixes</li>
+                            </ul>
+                        </div>
+                        <div class="deliverable-category">
+                            <h4>Infrastructure & DevOps</h4>
+                            <ul>
+                                <li>HPA stabilization to scale pods reliably under load</li>
+                                <li>CronJobs fixed with proper node selection and service accounts</li>
+                                <li>Backend API concurrency increased (8 → 32 threads) for throughput</li>
+                                <li>Observability stack deployed: Prometheus, Grafana, Loki, Alloy</li>
+                            </ul>
+                        </div>
+                        <div class="deliverable-category">
+                            <h4>Pipeline & Environment Readiness</h4>
+                            <ul>
+                                <li>Automated VM disk cleanup to reduce pipeline failures</li>
+                                <li>Consistent CI/CD runs with fewer developer interruptions</li>
+                                <li>Environment expansion: eydemo, eyprod, eysandbox, labs, tax-nav</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support -->
+                <div class="support-section">
+                    <h3>Client Engagement Support</h3>
+                    <div class="support-grid">
+                        <div class="support-card">
+                            <h4>Government of Canada</h4>
+                            <p>Diagnosed memory leaks, engine bottlenecks, and CronJob failures surfaced during live deployments.</p>
+                        </div>
+                        <div class="support-card">
+                            <h4>Tax Navigator</h4>
+                            <p>Resolved autoscaling breaks, component performance issues, and missing permissions discovered in production pilots.</p>
+                        </div>
+                        <div class="support-card">
+                            <h4>Platform Feedback Loop</h4>
+                            <p>Field learnings fed directly into engine fixes, infrastructure improvements, and quality backlog prioritization.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Impact -->
+                <div class="impact-section">
+                    <h3>Business & Platform Impact</h3>
+                    <p class="impact-intro">
+                        The pod delivered tangible reliability gains while building the repeatable processes needed for future enterprise releases.
+                    </p>
+                    <div class="impact-grid-compact">
+                        <div class="impact-item-compact">
+                            <h4>Reliability</h4>
+                            <p>Autoscaling, CronJobs, and API concurrency hardened for sustained load.</p>
+                        </div>
+                        <div class="impact-item-compact">
+                            <h4>Predictable Releases</h4>
+                            <p>Defined testing lifecycle ensures clarity across every environment.</p>
+                        </div>
+                        <div class="impact-item-compact">
+                            <h4>Developer Efficiency</h4>
+                            <p>CI/CD interruptions drop thanks to cleanup automation and environment consistency.</p>
+                        </div>
+                        <div class="impact-item-compact">
+                            <h4>Observability</h4>
+                            <p>Full-stack telemetry unlocks proactive monitoring and faster root-cause analysis.</p>
+                        </div>
+                        <div class="impact-item-compact">
+                            <h4>Deployment Agility</h4>
+                            <p>New environments accelerate EY demos, labs work, and client pilots.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next Steps -->
+                <div class="next-steps-section" style="margin-bottom: 0;">
+                    <h3>Next Steps</h3>
+                    <div class="next-steps-grid-compact">
+                        <div class="next-step-item" style="padding: 0.75rem;">Expand automated testing coverage and add performance test suites</div>
+                        <div class="next-step-item" style="padding: 0.75rem;">Integrate test reporting dashboards for live status visibility</div>
+                        <div class="next-step-item" style="padding: 0.75rem;">Enable Grafana alerting and backend load testing for concurrency</div>
+                        <div class="next-step-item" style="padding: 0.75rem;">Monitor environment health and pipeline reliability across cycles</div>
+                        <div class="next-step-item" style="padding: 0.75rem;">Evaluate scalable backend concurrency models for future releases</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back-link-container">
+                <a href="index.html" class="back-link">← Back to Overview</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>FlexiGenAI</h3>
+                    <p>Release 6 - Enterprise-Ready AI Platform</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Overview</a>
+                    <a href="quality.html">Product Quality</a>
+                    <a href="agentic.html">Agentic AI</a>
+                    <a href="ingestion.html">Ingestion</a>
+                    <a href="uiux.html">UI/UX</a>
+                    <a href="admin.html">Admin</a>
+                    <a href="testing.html">Testing & DevOps</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FlexiGenAI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

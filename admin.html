@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - FlexiGenAI Release 6</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="ey-logo.png" alt="EY" class="ey-logo-img">
+                <span class="nav-logo-text">FlexiGenAI</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Overview</a>
+                <a href="quality.html" class="nav-link">Quality</a>
+                <a href="agentic.html" class="nav-link">Agentic AI</a>
+                <a href="ingestion.html" class="nav-link">Ingestion</a>
+                <a href="uiux.html" class="nav-link">UI/UX</a>
+                <a href="admin.html" class="nav-link active">Admin</a>
+                <a href="testing.html" class="nav-link">Testing &amp; DevOps</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Admin -->
+    <section id="admin" class="section admin-section">
+        <div class="parallax-bg admin-bg"></div>
+        <div class="content-container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Admin</h2>
+                <p class="section-subtitle">Enterprise Governance & Multi-Tenancy</p>
+            </div>
+
+            <!-- Overview -->
+            <div class="admin-content" style="position: relative; z-index: 1; transform: none !important;">
+                <div class="intro-section" style="margin-bottom: 2rem;">
+                    <p class="intro-text" style="font-size: 0.875rem; line-height: 1.6;">
+                        The Admin Pod's focus this cycle was to make FlexiGenAI enterprise-ready by strengthening its administrative and governance capabilities. This meant introducing true multi-tenancy, workspace segregation, environment isolation, and advanced RBAC controls — all key requirements for large-scale client deployments. The team remained focused on this core mission throughout the release, addressing deep architectural dependencies while progressing toward full enterprise readiness.
+                    </p>
+                </div>
+
+                <!-- Enterprise Readiness Indicator -->
+                <div class="readiness-indicator" style="margin-bottom: 2rem;">
+                    <div class="readiness-bar">
+                        <div class="readiness-fill" style="width: 80%;"></div>
+                    </div>
+                    <div class="readiness-label" style="font-size: 0.875rem; margin-top: 0.5rem;">
+                        <strong style="color: var(--ey-primary);">80% Enterprise Readiness</strong> (up from 25–30% baseline)
+                    </div>
+                </div>
+
+                <!-- Product Objectives -->
+                <div class="objectives-section" style="margin-bottom: 2rem;">
+                    <h3>Product Objectives</h3>
+                    <div class="objectives-grid-compact">
+                        <div class="objective-item-compact">
+                            <strong style="font-size: 0.8125rem; color: var(--ey-primary); display: block; margin-bottom: 0.5rem;">Original Objective</strong>
+                            <div style="font-size: 0.75rem; line-height: 1.5;">
+                                <p style="margin-bottom: 0.5rem;">Evolve Admin and RBAC into a scalable, secure foundation for enterprise environments:</p>
+                                <ul style="list-style: none; padding-left: 1rem; margin: 0;">
+                                    <li style="margin-bottom: 0.25rem;">→ Multi-Tenancy: Isolated tenants within single deployment</li>
+                                    <li style="margin-bottom: 0.25rem;">→ Workspace & User Segregation: Workspace-level visibility and control</li>
+                                    <li style="margin-bottom: 0.25rem;">→ Environment Segregation: Separate configurations and data</li>
+                                    <li style="margin-bottom: 0.25rem;">→ Governance Enhancements: Password reset, ownership reassignment, user lifecycle</li>
+                                    <li style="margin-bottom: 0.25rem;">→ Observability: Logging and visibility into administrative actions</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="objective-item-compact">
+                            <strong style="font-size: 0.8125rem; color: var(--ey-primary); display: block; margin-bottom: 0.5rem;">Refined Objective (Scope Adjustment)</strong>
+                            <div style="font-size: 0.75rem; line-height: 1.5;">
+                                <p style="margin-bottom: 0.5rem;">Prioritized deliverables within available capacity:</p>
+                                <ul style="list-style: none; padding-left: 1rem; margin: 0;">
+                                    <li style="margin-bottom: 0.25rem;">→ Complete tenant and workspace management</li>
+                                    <li style="margin-bottom: 0.25rem;">→ Deliver environment segregation UI</li>
+                                    <li style="margin-bottom: 0.25rem;">→ Reinforce RBAC foundation for org- and workspace-level roles</li>
+                                    <li style="margin-bottom: 0.25rem;">→ Prepare backend infrastructure for observability and environment-level enforcement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Deliverables -->
+                <div class="deliverables-section" style="margin-bottom: 2rem;">
+                    <h3>Key Deliverables</h3>
+                    <div class="admin-features-compact">
+                        <div class="admin-feature-item-compact">
+                            <div class="feature-icon" style="font-size: 1.5rem;">🏢</div>
+                            <div class="feature-details">
+                                <h4 style="font-size: 0.875rem; margin-bottom: 0.5rem;">Multi-Tenancy & Workspace Segregation</h4>
+                                <p style="font-size: 0.6875rem; line-height: 1.4;">Introduced tenant and workspace creation with user isolation and configuration separation</p>
+                            </div>
+                        </div>
+                        <div class="admin-feature-item-compact">
+                            <div class="feature-icon" style="font-size: 1.5rem;">🌐</div>
+                            <div class="feature-details">
+                                <h4 style="font-size: 0.875rem; margin-bottom: 0.5rem;">Environment Segregation (UI)</h4>
+                                <p style="font-size: 0.6875rem; line-height: 1.4;">Implemented full frontend segregation features; backend logic to follow next cycle</p>
+                            </div>
+                        </div>
+                        <div class="admin-feature-item-compact">
+                            <div class="feature-icon" style="font-size: 1.5rem;">🔐</div>
+                            <div class="feature-details">
+                                <h4 style="font-size: 0.875rem; margin-bottom: 0.5rem;">RBAC Enhancements</h4>
+                                <p style="font-size: 0.6875rem; line-height: 1.4;">Added org admin vs. workspace admin roles with clear control boundaries</p>
+                            </div>
+                        </div>
+                        <div class="admin-feature-item-compact">
+                            <div class="feature-icon" style="font-size: 1.5rem;">👥</div>
+                            <div class="feature-details">
+                                <h4 style="font-size: 0.875rem; margin-bottom: 0.5rem;">User Management Features</h4>
+                                <p style="font-size: 0.6875rem; line-height: 1.4;">Re-enabled Delete User, Ownership Reassignment, and Forgot Password flows</p>
+                            </div>
+                        </div>
+                        <div class="admin-feature-item-compact">
+                            <div class="feature-icon" style="font-size: 1.5rem;">🧭</div>
+                            <div class="feature-details">
+                                <h4 style="font-size: 0.875rem; margin-bottom: 0.5rem;">Integrated Navigation</h4>
+                                <p style="font-size: 0.6875rem; line-height: 1.4;">Connected Admin Panel to the new unified menu for a seamless experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blockers & Resolutions -->
+                <div class="blockers-section" style="margin-bottom: 2rem;">
+                    <h3>Blockers & Resolutions</h3>
+                    <div class="blockers-grid-compact">
+                        <div class="blocker-card-compact">
+                            <div class="blocker-status resolved">✓ Resolved</div>
+                            <h4 style="font-size: 0.875rem; margin-bottom: 0.5rem; color: var(--ey-text);">Monolithic Feature Structure</h4>
+                            <p style="font-size: 0.6875rem; line-height: 1.4; color: var(--ey-text-secondary);">The scale of RBAC and multi-tenancy changes made incremental deployment difficult. <strong style="color: var(--ey-primary);">Lesson learned:</strong> Early partitioning during design and planning will allow future features to ship faster in smaller, testable releases.</p>
+                        </div>
+                        <div class="blocker-card-compact">
+                            <div class="blocker-status resolved">✓ Resolved</div>
+                            <h4 style="font-size: 0.875rem; margin-bottom: 0.5rem; color: var(--ey-text);">Infrastructure Capacity Constraints</h4>
+                            <p style="font-size: 0.6875rem; line-height: 1.4; color: var(--ey-text-secondary);">Backend and frontend resource limits slowed progress on observability and backend environment segregation. <strong style="color: var(--ey-primary);">Resolution:</strong> Prioritized completion of UI and role-based logic while deferring infra-heavy work to the next release.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business & Platform Impact -->
+                <div class="impact-section" style="margin-bottom: 2rem;">
+                    <h3>Business & Platform Impact</h3>
+                    <p class="impact-intro" style="font-size: 0.75rem; margin-bottom: 1rem;">
+                        This release significantly advances FlexiGenAI's enterprise maturity. Clients can now deploy securely across departments or organizations, with clear separation of users, data, and configurations.
+                    </p>
+                    <div class="impact-grid-compact">
+                        <div class="impact-item-compact">
+                            <h4 style="font-size: 0.875rem; margin-bottom: 0.5rem;">Major Step Toward Enterprise Readiness</h4>
+                            <p style="font-size: 0.6875rem; line-height: 1.4;">~80% achieved, up from 25–30% baseline</p>
+                        </div>
+                        <div class="impact-item-compact">
+                            <h4 style="font-size: 0.875rem; margin-bottom: 0.5rem;">Secure Multi-Tenant Structure</h4>
+                            <p style="font-size: 0.6875rem; line-height: 1.4;">Tenant and workspace structure for client implementations</p>
+                        </div>
+                        <div class="impact-item-compact">
+                            <h4 style="font-size: 0.875rem; margin-bottom: 0.5rem;">Stronger RBAC Foundation</h4>
+                            <p style="font-size: 0.6875rem; line-height: 1.4;">More modular RBAC foundation for future scalability</p>
+                        </div>
+                        <div class="impact-item-compact">
+                            <h4 style="font-size: 0.875rem; margin-bottom: 0.5rem;">Improved User Management</h4>
+                            <p style="font-size: 0.6875rem; line-height: 1.4;">Enhanced navigation and user management experience</p>
+                        </div>
+                        <div class="impact-item-compact">
+                            <h4 style="font-size: 0.875rem; margin-bottom: 0.5rem;">Framework Established</h4>
+                            <p style="font-size: 0.6875rem; line-height: 1.4;">Foundation for upcoming observability and environment-level enforcement</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next Steps -->
+                <div class="next-steps-section" style="margin-bottom: 0;">
+                    <h3>Next Steps</h3>
+                    <div class="next-steps-grid-compact">
+                        <div class="next-step-item" style="font-size: 0.6875rem; padding: 0.75rem; line-height: 1.4;">Observability & Audit Logs: Enable detailed visibility into administrative actions</div>
+                        <div class="next-step-item" style="font-size: 0.6875rem; padding: 0.75rem; line-height: 1.4;">Environment Segregation (Backend): Complete backend logic for full environment-level data isolation</div>
+                        <div class="next-step-item" style="font-size: 0.6875rem; padding: 0.75rem; line-height: 1.4;">License Management Integration: Introduce license enforcement screens and backend integration</div>
+                        <div class="next-step-item" style="font-size: 0.6875rem; padding: 0.75rem; line-height: 1.4;">Tool Selection & Monitoring: Finalize admin observability features and selection tooling</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="back-link-container">
+                <a href="index.html" class="back-link">← Back to Overview</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>FlexiGenAI</h3>
+                    <p>Release 6 - Enterprise-Ready AI Platform</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Overview</a>
+                    <a href="quality.html">Product Quality</a>
+                    <a href="agentic.html">Agentic AI</a>
+                    <a href="ingestion.html">Ingestion</a>
+                    <a href="uiux.html">UI/UX</a>
+                    <a href="admin.html">Admin</a>
+                    <a href="testing.html">Testing &amp; DevOps</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FlexiGenAI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
