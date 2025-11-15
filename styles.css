@@ -603,7 +603,7 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: var(--ey-primary);
+    background: linear-gradient(90deg, #FFE000 0%, #00d4ff 100%);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -876,7 +876,7 @@ body {
     left: 0;
     width: 3px;
     height: 100%;
-    background: var(--ey-primary);
+    background: linear-gradient(180deg, #FFE000 0%, #00d4ff 100%);
     transform: scaleY(0);
     transform-origin: bottom;
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -927,6 +927,23 @@ body {
     display: flex;
     flex-direction: column;
     overflow: visible;
+}
+
+.deliverables-section .deliverable-category::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, #FFE000 0%, #00d4ff 100%);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.deliverables-section .deliverable-category:hover::after {
+    transform: scaleY(1);
 }
 
 .deliverables-section .deliverable-category:hover {
@@ -1053,6 +1070,116 @@ body {
     color: var(--ey-text-secondary);
 }
 
+/* Testing & DevOps Section */
+.testing-section {
+    padding: 5rem 0 2rem;
+}
+
+.testing-section .section-header {
+    margin-bottom: 2rem;
+}
+
+.testing-section .section-subtitle {
+    font-size: 0.9rem;
+}
+
+.testing-content .intro-section {
+    max-width: 820px;
+    margin: 0 auto 2.5rem;
+}
+
+.testing-content .intro-text {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--ey-text-secondary);
+}
+
+.pillars-section,
+.workflow-section {
+    margin-bottom: 2.5rem;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1rem;
+}
+
+.pillar-card {
+    background: linear-gradient(135deg, rgba(199, 125, 255, 0.2), rgba(125, 211, 252, 0.08));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1.25rem;
+    min-height: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.35);
+}
+
+.pillar-card h4 {
+    color: var(--ey-primary);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.pillar-card p {
+    color: var(--ey-text-secondary);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.workflow-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.workflow-card {
+    position: relative;
+    border: 1px solid var(--ey-border);
+    border-radius: 12px;
+    padding: 1.75rem 1.25rem 1.25rem;
+    background: rgba(10, 10, 10, 0.7);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.workflow-step {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #c084fc, #7dd3fc);
+    color: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(192, 132, 252, 0.4);
+    align-self: flex-start;
+}
+
+.workflow-card h4 {
+    margin: 0;
+    color: var(--ey-primary);
+    font-size: 1rem;
+}
+
+.workflow-card p {
+    color: var(--ey-text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.workflow-note {
+    margin-top: 1.25rem;
+    text-align: center;
+    color: var(--ey-text-secondary);
+    font-size: 0.9rem;
+}
+
 .metrics-section {
     margin-top: 3.5rem;
     margin-bottom: 3.5rem;
@@ -1137,6 +1264,25 @@ body {
     border-radius: 8px;
     padding: 0.875rem;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.deliverable-category-compact::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, #FFE000 0%, #00d4ff 100%);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.deliverable-category-compact:hover::after {
+    transform: scaleY(1);
 }
 
 .deliverable-category-compact:hover {
@@ -2209,6 +2355,25 @@ body {
     color: var(--ey-text);
     transition: all 0.3s ease;
     display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, #FFE000 0%, #00d4ff 100%);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-card:hover::after {
+    transform: scaleY(1);
 }
 
 .nav-card:hover {
